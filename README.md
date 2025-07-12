@@ -95,3 +95,20 @@ git pull origin main
 
 2. Crie a branch do hotfix
 git checkout -b hotfix/1.3.1
+
+3. Faça as alterações (exemplo)
+nano src/api/rota_critica.js
+# ou use seu editor preferido
+4. Commit e push
+git add .
+git commit -m "fix: corrige bug em rota crítica"
+git push -u origin hotfix/1.3.1
+
+5. 🔁 Crie os dois Pull Requests no GitHub:
+✅ PR 1 → produção:
+hotfix/1.3.1 → main (obrigatório)
+Título: hotfix: 1.3.1
+Após aprovação: merge
+✅ PR 2 → develop:
+hotfix/1.3.1 → develop (obrigatório)
+Para que a correção vá para o ciclo de release futuro
