@@ -112,3 +112,14 @@ Após aprovação: merge
 ✅ PR 2 → develop:
 hotfix/1.3.1 → develop (obrigatório)
 Para que a correção vá para o ciclo de release futuro
+
+6. 🏷️ Após o merge em main, crie a tag da versão
+git checkout main
+git pull origin main
+
+git tag -a v1.3.1 -m "Hotfix 1.3.1"
+git push origin v1.3.1
+
+7. (Opcional) Limpeza
+git branch -d hotfix/1.3.1
+git push origin --delete hotfix/1.3.1
