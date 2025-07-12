@@ -1,5 +1,5 @@
 # Dockerfile para Go 1.23 rodando em Ubuntu arm64
-FROM --platform=linux/arm64 golang:1.23-alpine
+FROM golang:1.23-alpine
 
 WORKDIR /app
 
