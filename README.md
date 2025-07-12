@@ -85,3 +85,13 @@ git pull origin main
 git tag -a v1.4.0 -m "Release 1.4.0"
 git push origin v1.4.0
 
+
+
+### criando um hotfix ###
+
+1. Vá para a branch main e atualize
+git checkout main
+git pull origin main
+
+2. Crie a branch do hotfix
+git checkout -b hotfix/1.3.1
