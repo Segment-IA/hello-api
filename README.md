@@ -32,7 +32,7 @@ Este projeto já possui CI configurado para rodar os testes em cada `push` e `pu
 # teste de code review
 
 
-### criando nov afeature ###
+### criando nova feature ###
 
 git checkout develop
 git pull origin develop
