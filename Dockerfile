@@ -9,6 +9,6 @@ RUN apk update && apk upgrade --no-cache && apk add --no-cache ca-certificates
 
 RUN go mod download
 
-RUN GOARCH=arm64 go build -o hello-api
+RUN  go build -o hello-api
 
 CMD ["./hello-api"]
